@@ -87,3 +87,17 @@ div.productos {
     text-align: center;
     color: whitesmoke;
 }
+
+.prod-itm p {
+    padding-top: 5px;
+}
+
+img.loc-icon {
+    width: 40px;
+}
+
+div.varios {
+    display: flex;
+    padding-top: 20px;
+    text-align: center;
+}
