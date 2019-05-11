@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="Styles\Master-Style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="Assets\CSS3FullscreenSlideshow\css\demo.css" />
+    <link rel="stylesheet" type="text/css" href="Assets\CSS3FullscreenSlideshow\css\style1.css" />
+    <script type="text/javascript" src="Assets\CSS3FullscreenSlideshow\js\modernizr.custom.86080.js"></script>
+    <script>
+        function myFunction() {
+            var dots = document.getElementById("dots");
+            var moreText = document.getElementById("more");
+            var btnText = document.getElementById("myBtn");
+            var btnTexts = document.getElementById("myBtnless");
+
+            if (dots.style.display === "none") {
+                dots.style.display = "inline";
+                btnText.innerHTML = "<img class='more-icon' src='Assets\u002FImagenes\u002Fmore-icon.png'>";
+                moreText.style.display = "none";
+            } else {
+                dots.style.display = "none";
+                btnText.innerHTML = btnTexts.innerHTML;
+                moreText.style.display = "inline";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <div class="pos-f-t codrops-top">
+        <nav class="navbar navbar-dark bg-dark">
+            <div>
+                <img class="site-logo" src="Assets\Imagenes\Logo.png">
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        </nav>
+        <div class="collapse" id="navbarToggleExternalContent">
+            <div class="bg-dark sup-nav">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#home"><img class="home-icon" src="Assets\Imagenes\home.png" alt=""></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#prods">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Contact Us! (Soon)</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="Home">
+        <div class="top-banner">
+            <ul class="cb-slideshow">
+                <li><span>Image 01</span>
+                    <div>
+                        <h3>De·si·gn</h3>
+                    </div>
+                </li>
+                <li><span>Image 02</span>
+                    <div>
+                        <h3>St·y·le</h3>
+                    </div>
+                </li>
+                <li><span>Image 03</span>
+                    <div>
+                        <h3>Mo·de·rn</h3>
+                    </div>
+                </li>
+                <li><span>Image 04</span>
+                    <div>
+                        <h3>Design</h3>
+                    </div>
+                </li>
+                <li><span>Image 05</span>
+                    <div>
+                        <h3>Style</h3>
+                    </div>
+                </li>
+                <li><span>Image 06</span>
+                    <div>
+                        <h3>Design</h3>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="main-content" id="home">
+            <h1>About us Section</h1>
+            <div class="cont-info">
+                <p>Lorem ipsum dolor sit amet, consectetur. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quae corporis hic perspiciatis deserunt eligendi? Tempore suscipit, eum earum ab molestiae dolor optio, deleniti delectus excepturi numquam
+                    eos cupiditate officiis aliquam. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span id="dots">...</span><span id="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span>
+                    <span class="rd-more" onclick="myFunction()" id="myBtn"><img class="more-icon" src="Assets\Imagenes\more-icon.png" alt=""></span>
+                    <span class="rd-less" style="display:none;" id="myBtnless"><img class="more-icon" src="Assets\Imagenes\less-icon.png" alt=""></span></p>
+            </div>
+            <div class="cont-img"><img src="Assets\Imagenes\cont-img.png" alt=""></div>
+        </div>
+        <div class="prod-content" id="prods">
+            <h1>Products Section</h1>
+            <div class="row productos">
+                <div class="col column prod-itm"><img src="Assets\Imagenes\prod-img.png" alt="">
+                    <p class="img-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dignissimos optio enim, aspernatur alias sapiente obcaecati eligendi?</p>
+                </div>
+                <div class="col column prod-itm"><img src="Assets\Imagenes\prod-img.png" alt="">
+                    <p class="img-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dignissimos optio enim, aspernatur alias sapiente obcaecati eligendi?</p>
+                </div>
+                <div class="col column prod-itm"><img src="Assets\Imagenes\prod-img.png" alt="">
+                    <p class="img-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dignissimos optio enim, aspernatur alias sapiente obcaecati eligendi?</p>
+                </div>
+                <div class="col column prod-itm"><img src="Assets\Imagenes\prod-img.png" alt="">
+                    <p class="img-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit dignissimos optio enim, aspernatur alias sapiente obcaecati eligendi?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
